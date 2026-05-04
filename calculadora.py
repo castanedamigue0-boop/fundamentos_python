@@ -30,6 +30,3 @@ elif selector == "**":
 else:
     print("operador no valido")
 
-
-
-

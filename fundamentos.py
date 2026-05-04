@@ -22,25 +22,8 @@ print(
     X
 )  # todas las letras van en minuscula y las palabras se separan por guion bajo, ademas de que el nombre de la variable es una sola letra pero esta letra es mayuscula
 
-# tipos de datos
-nombre = "miguel "
-apellido = "castañeda"
-edad = 18
-altura = 1.75
-activo = True
-correo = "castanedamigue0@gmail.com"
-telefono = "3106192145"
-cedula = 1088830154
 
-# imprimir el tipo de dato de cada variable
-print(type(nombre), nombre)
-print(type(apellido), apellido)
-print(type(edad), edad)
-print(type(altura), altura)
-print(type(activo), activo)
-print(type(correo), correo)
-print(type(telefono))
-print(type(cedula), cedula)
+
 
 # convertir el tipo de dato de telefono a entero, edad a float, altura a entero y cedula a string
 telefono_int = int(telefono)
