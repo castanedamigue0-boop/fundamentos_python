@@ -1,7 +1,7 @@
 # --- EJERCICIO 1: Creación de Variables ---
 # Definición de variables con distintos tipos de datos (Nombre, Valor, Promedio)
 
-nombre = "Juan Pérez"
+nombre = "Juan Pérez" #se creo una ariable para nombre
 valor_producto = 1500.50
 promedio_asignatura = 4.5
 
@@ -113,7 +113,7 @@ print(f"Valores intercambiados: A = {a}, B = {b}")
 
 # --- EJERCICIO 7: Operación Booleana ---
 # Evaluación de expresiones lógicas (OR / AND)
-
+S
 print("Evaluación de la expresión: (5 == 2) or (2 > 1)")
 
 estado = (5 == 2) or (2 > 1)
