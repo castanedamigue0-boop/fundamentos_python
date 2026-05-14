@@ -1,0 +1,24 @@
+# 1. Declarar lista inicial
+canciones = ["Blinding Lights", "Starboy", "Save Your Tears", "Die For You", "The Hills"]
+
+# 2. Aplicar métodos en orden
+canciones.append("After Hours") # Agregar al final
+canciones.insert(1, "In Your Eyes") # Agregar en segunda posición
+canciones.extend(["Bonus Track 1", "Bonus Track 2"]) # Fusionar lista
+
+print("Estado de la lista tras modificaciones:", canciones)
+
+# 3. Eliminar elementos
+canciones.remove("Starboy") # Eliminar por nombre
+eliminada = canciones.pop() # Eliminar la última (Bonus Track 2)
+print(f"Canción eliminada con pop(): {eliminada}")
+
+# 4. Ordenar alfabéticamente
+canciones.sort()
+print("Lista ordenada alfabéticamente:", canciones)
+
+# 5. Respuestas a preguntas
+print(f"\n¿Cuántas canciones tiene la playlist?: {len(canciones)}")
+# La primera que agregué fue "After Hours" con el append
+print(f"¿En qué posición está 'After Hours'?: {canciones.index('After Hours')}")
+print(f"¿Cuántas veces aparece 'Bonus Track 1'?: {canciones.count('Bonus Track 1')}")
