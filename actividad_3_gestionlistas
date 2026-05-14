@@ -1,24 +1,27 @@
-# 1. Declarar lista inicial
-canciones = ["Blinding Lights", "Starboy", "Save Your Tears", "Die For You", "The Hills"]
+# 1. Declarar lista inicial con 5 canciones colombianas
+canciones = ["La Camisa Negra", "Cali Pachanguero", "La Gota Fría", "Robarte un Beso", "Colombia Tierra Querida"]
 
 # 2. Aplicar métodos en orden
-canciones.append("After Hours") # Agregar al final
-canciones.insert(1, "In Your Eyes") # Agregar en segunda posición
-canciones.extend(["Bonus Track 1", "Bonus Track 2"]) # Fusionar lista
+canciones.append("Provenza") # Agrego una nueva al final (Karol G)
+canciones.insert(1, "Hips Don't Lie") # Inserto en la segunda posición (Shakira)
+# Fusiono la lista con los bonus tracks que pide la guía
+canciones.extend(["Bonus Track 1", "Bonus Track 2"]) 
 
 print("Estado de la lista tras modificaciones:", canciones)
 
 # 3. Eliminar elementos
-canciones.remove("Starboy") # Eliminar por nombre
-eliminada = canciones.pop() # Eliminar la última (Bonus Track 2)
+# Elimino una por nombre (Cali Pachanguero)
+canciones.remove("Cali Pachanguero") 
+# Elimino la última de la lista y guardo su valor
+eliminada = canciones.pop() 
 print(f"Canción eliminada con pop(): {eliminada}")
 
 # 4. Ordenar alfabéticamente
 canciones.sort()
 print("Lista ordenada alfabéticamente:", canciones)
 
-# 5. Respuestas a preguntas
+# 5. Respuestas a preguntas usando métodos
 print(f"\n¿Cuántas canciones tiene la playlist?: {len(canciones)}")
-# La primera que agregué fue "After Hours" con el append
-print(f"¿En qué posición está 'After Hours'?: {canciones.index('After Hours')}")
+# Busco la posición de la primera canción que agregué con append ('Provenza')
+print(f"¿En qué posición está 'Provenza'?: {canciones.index('Provenza')}")
 print(f"¿Cuántas veces aparece 'Bonus Track 1'?: {canciones.count('Bonus Track 1')}")
